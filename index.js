@@ -14,7 +14,7 @@ if (!email) {
   }
 
     if(email === "senai@gmail.com" && senha === "senai"){
-        window.location.href = "./home.html"
+        window.location.href =  "./pages/home/home.html";
     }
     else{
         alert("Credenciais incorretas")
