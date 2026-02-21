@@ -17,21 +17,22 @@
   </head>
 
   <body>
-    <div class="container_login">
+
+    <form id="form_login" class="container_login">
       <h1>Login</h1>
-      <input class="input" type="text" placeholder="Email" id="email" />
-      <input class="input" type="password" placeholder="Senha" id="senha" />
+      <input class="input" type="email" placeholder="Email" id="email" required/>
+      <input class="input" type="password" placeholder="Senha" id="senha" required/>
 
      <div class="container_checkbox">
         <input type="checkbox" id="exibir_senha" onclick="exibirSenha()" />
         <label for="exibir_senha">Exibir senha</label>
       </div>
 
-      <button class="button_login" onclick="realizarLogin()">ENTRAR</button>
+      <button class="button_login" type="submit">ENTRAR</button>
 
-      <p>Ainda não tem conta? <a href="">Crie agora</a></p>
-    </div>
+      <p>Ainda não tem conta? <a href="./pages/sobre/">Crie agora</a></p>
+    </form>
 
-    <script src="./script.js"></script>
+    <script src="./index.js"></script>
   </body>
 </html>
