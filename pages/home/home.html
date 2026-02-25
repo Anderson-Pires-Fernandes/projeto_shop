@@ -54,6 +54,53 @@
         gap: 10px;
         align-items: center;
       }
+
+      .produto {
+        margin-top: 40px;
+
+        width: 200px;
+        background-color: #ccc;
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        /* padding: 0px 10px 10px 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;*/
+      }
+
+      .produto_imagem_container {
+        background-color: #ffe739;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: auto;
+      }
+
+      .produto_imagem {
+        width: 100%;
+      }
+
+      .produto_informacoes_container {
+        padding: 10px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .produtos_container{
+        display: flex;
+        gap: 10px ;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+
+        margin: 40px auto;
+        max-width: 900px;
+      }
+    
     </style>
 
   </head>
@@ -81,7 +128,77 @@
       <button>Explorar</button>
     </div>
 
-    
+    <div class="produtos_container">
+
+    <div class="produto">
+      <div class="produto_imagem_container">
+        <img
+          src="https://images.ygoprodeck.com/images/cards/46986414.jpg"
+          class="produto_imagem"
+        />
+      </div>
+
+      <div class="produto_informacoes_container">
+        <h3>Dark Magician</h3>
+        <span>ULTRA RARO</span>
+        <p>O mago mais icônico do Yu-Gi-Oh!</p>
+        <span>R$ 120,00</span>
+        <button>Adicionar</button>
+      </div>
+    </div>
+
+    <div class="produto">
+      <div class="produto_imagem_container">
+        <img
+          src="https://images.ygoprodeck.com/images/cards/46986414.jpg"
+          class="produto_imagem"
+        />
+      </div>
+
+      <div class="produto_informacoes_container">
+        <h3>Dark Magician</h3>
+        <span>ULTRA RARO</span>
+        <p>O mago mais icônico do Yu-Gi-Oh!</p>
+        <span>R$ 120,00</span>
+        <button>Adicionar</button>
+      </div>
+    </div>
+
+    <div class="produto">
+      <div class="produto_imagem_container">
+        <img
+          src="https://images.ygoprodeck.com/images/cards/46986414.jpg"
+          class="produto_imagem"
+        />
+      </div>
+
+      <div class="produto_informacoes_container">
+        <h3>Dark Magician</h3>
+        <span>ULTRA RARO</span>
+        <p>O mago mais icônico do Yu-Gi-Oh!</p>
+        <span>R$ 120,00</span>
+        <button>Adicionar</button>
+      </div>
+    </div>
+
+    <div class="produto">
+      <div class="produto_imagem_container">
+        <img
+          src="https://images.ygoprodeck.com/images/cards/46986414.jpg"
+          class="produto_imagem"
+        />
+      </div>
+
+      <div class="produto_informacoes_container">
+        <h3>Dark Magician</h3>
+        <span>ULTRA RARO</span>
+        <p>O mago mais icônico do Yu-Gi-Oh!</p>
+        <span>R$ 120,00</span>
+        <button>Adicionar</button>
+      </div>
+    </div>
+
+   </div>
 
     <script src="./home.js"></script>
   </body>
