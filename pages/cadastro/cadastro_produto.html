@@ -1,0 +1,130 @@
+<!doctype html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Produto</title>
+
+    <link rel="stylesheet" href="../../styles/reset.css" />
+    <link rel="stylesheet" href="../../styles/main.css">
+
+    <style>
+
+      .container_form {
+        width: 60%;
+        height: 700px;
+        background-color: #f5f5f5;
+        margin: 40px auto;
+        border-radius: 8px;
+        padding: 25px;
+       
+        box-shadow:
+          rgba(0, 0, 0, 0.25) 0px 14px 28px,
+          rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .container_form h1 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 28px;
+        margin-top: 10px;  
+        margin-bottom: 10px;
+      }
+
+      .container_form label {
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .container_form textarea {
+        width: 100%;
+        height: 120px;
+        resize: none;
+
+        box-sizing: border-box;
+      }
+    
+      .elemento_form {
+        padding: 12px;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+
+      
+      .container_botoes {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;  
+      }
+      .botoes {
+        width: 250px;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      .botoes:hover{
+        opacity: 0.5;
+      }
+     .bg_botao_cadastar {
+        background-color: #FFE739;
+     }
+     .bg_botao_limpar {
+        background-color: #CCCCCC;
+     }
+      
+    </style>
+  </head>
+  <body>
+
+   <form class="container_form" id="form_produto">
+
+      <h1>Cadastro de Produto</h1>
+
+      <label for="input_nome">Nome do produto</label>
+      <input
+        placeholder="Ex: Mago negro"
+        id="input_nome"
+        class="elemento_form"
+      />
+
+      <label for="select_raridade">Raridade</label>
+      <select id="select_raridade" class="elemento_form">
+        <option value="">Selecione uma raridade</option>
+        <option value="Comum">Comum</option>
+        <option value="Raro">Raro</option>
+        <option value="Ultra raro">Ultra raro</option>
+      </select>
+
+      <label for="input_preco"> Preço (R$) </label>
+      <input
+        type="number"
+        placeholder="R$ 0,00"
+        id="input_preco"
+        class="elemento_form"
+      />
+
+      <label for="textarea_descricao">Descrição</label>
+      <textarea id="textarea_descricao" class="elemento_form"></textarea>
+
+      <label for="input_imagem">Url da imagem</label>
+      <input type="url" id="input_imagem" class="elemento_form" />
+
+      <div class="container_botoes">
+        <button class="botoes bg_botao_cadastar " type="submit">Cadastrar</button>
+        <button class="botoes bg_botao_limpar">Limpar</button>
+      </div>  
+
+    </form>
+
+    <script src="../cadastro/cadastro.js"></script>
+    <script src="../scripts/menu.js"></script>
+    
+  </body>
+</html>
