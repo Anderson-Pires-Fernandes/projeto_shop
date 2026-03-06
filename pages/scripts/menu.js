@@ -6,7 +6,7 @@ function carregarMenu(){
         <ul>
           <li>Produtos</li>
           <li>Sobre</li>
-          <li>Cadastro</li>
+          <li>Contato</li>
         </ul>
 
         <div class="carrinho_icone_container">
