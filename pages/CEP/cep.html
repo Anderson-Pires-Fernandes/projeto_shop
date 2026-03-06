@@ -1,0 +1,41 @@
+<!doctype html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho</title>
+
+    <link rel="stylesheet" href="../../styles/reset.css" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+
+    <style>
+      .form_cep {
+        width: 300px;
+        height: 300px;
+        margin: 40px auto;
+        padding: 10px;
+        background-color: #ccc;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form_cep" id="form_pesquisa">
+      <input placeholder="Digite seu CEP" id="input_cep" required minlength="8" maxlength="8"/>
+      <button type="submit">Pesquisar</button>
+
+      <p id="bairro_info"></p>
+      <p id="logradouro_info"></p>
+      <p id="localidade_info"></p>
+      <p id="uf_info"></p>
+
+    </form>
+
+    <script src="../scripts/menu.js"></script>
+    <script src="./carrinho.js"></script>
+  </body>
+</html>
